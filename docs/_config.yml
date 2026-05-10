@@ -1,0 +1,26 @@
+# GitHub Pages / Jekyll config für JCH IED Studio.
+#
+# Pages-Setup: Settings → Pages → Source "Deploy from a branch" →
+# Branch main, Folder /docs.
+#
+# Theme: Apple-typisches schlichtes Minima — kommt mit Pages out-of-the-box,
+# kein Build-Step nötig.
+
+title: JCH IED Studio
+description: IEC 61850 Engineering- und Diagnose-Tool für iPad und Mac.
+lang: de
+theme: minima
+markdown: kramdown
+permalink: pretty
+
+# Verstecke interne Architektur-Docs vom Public-Build.
+# Alles in /_dev/ wird von Jekyll automatisch ignoriert (Underscore-Prefix).
+# Hier nur sicherheitshalber explizit ausschließen.
+exclude:
+  - _dev
+  - .DS_Store
+
+# Header-Navigation — minima rendert das oben links.
+header_pages:
+  - bridge.md
+  - support.md
