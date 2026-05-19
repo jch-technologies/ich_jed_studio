@@ -13,23 +13,21 @@ IEDs per MMS, empfängt und sendet GOOSE und Sampled Values über die separate
 
 - **MMS-Client (IEC 61850-8-1)** — verbindet sich mit IEDs über TCP/102.
   Discovery (GetNameList / GetVAA), Read, Write, Reports (URCB/BRCB),
-  Setting Groups, Control-Services (SBO/Direct), alle Phoenix-Quirks abgedeckt.
+  Setting Groups, Control-Services (SBO/Direct).
 - **MMS-Server-Simulator** — eingebauter IEC-61850 Edition&nbsp;2.1 Server
   (Class A/B). SCD laden, IED auswählen, Variablen-Werte editieren,
   Signal-Generatoren (Sinus, Dreieck, Sägezahn, Rechteck, Rampe, Zufall)
   auf jedem MX-Wert. Quality + Timestamp werden automatisch gepflegt.
-  Konformitätstest-tauglich gegen UNIGRID&nbsp;SA.
 - **GOOSE & Sampled Values über Bridge** — die separate
   [JCH GOOSE Bridge](bridge.md) (eigenständig, kostenlos) macht die
   Layer-2-Frame-Arbeit (libpcap). Studio verbindet sich per WebSocket —
   Subscribe + Publish für GOOSE (EtherType 0x88B8) und SV (0x88BA).
 - **SCL-Editor** — Substations, Voltage Levels, Bays, ConductingEquipment,
   IEDs, LDevices, LNs, DataSets, RCBs, GoCBs, Inputs. Export als
-  SCD/ICD/IID/CID/SED. Drei eingebaute Demo-Projekte für Schulung +
-  Konformitätstest.
+  SCD/ICD/IID/CID/SED. Drei eingebaute Demo-Projekte.
 - **Spec-konformer SCL-Export** — `xsi:schemaLocation`, `RptEnabled`,
   korrektes P-Element-Ordering, transitive DataTypeTemplates-Closure.
-  Kompatibel zu Phoenix Engineer, Siemens DIGSI, ABB PCM600, openSCD.
+  Kompatibel zu den gängigsten Herstellern. 
 
 ---
 
