@@ -12,7 +12,7 @@ verbindet sich per WebSocket.
 
 ## Download
 
-- [**Aktuelle Version (.dmg, 2.6 MB)**](JCH-GOOSE-Bridge-0.1.0.dmg)
+- [**Aktuelle Version (.dmg, 2.6 MB)**]({{ '/JCH-GOOSE-Bridge-0.1.0.dmg' | relative_url }})
 
 > **Warum nicht über den Mac App Store?**
 > Die Bridge braucht `libpcap`-Zugriff auf rohe Ethernet-Frames, und das
@@ -29,7 +29,7 @@ verbindet sich per WebSocket.
 
 ### 1. DMG laden und Bridge in `/Applications` ziehen
 
-Lade die aktuelle [`.dmg`](JCH-GOOSE-Bridge-0.1.0.dmg), öffne sie per
+Lade die aktuelle [`.dmg`]({{ '/JCH-GOOSE-Bridge-0.1.0.dmg' | relative_url }}), öffne sie per
 Doppelklick und ziehe **JCH 61850 GOOSE Bridge** in den `Programme`-Ordner.
 
 ### 2. Erststart: Gatekeeper bestätigen
