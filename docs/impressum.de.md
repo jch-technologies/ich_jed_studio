@@ -104,8 +104,8 @@ jeweiligen Eigentümer.
 
 - Apple, macOS, iPadOS, iOS sind Marken von Apple Inc.
 - IEC 61850 ist ein Standard der International Electrotechnical Commission.
-- Phoenix Contact, Siemens, ABB, Schneider Electric und weitere genannte
-  Hersteller- oder Geräteidentifikatoren werden ausschließlich zu
+- Hersteller- oder Geräteidentifikatoren wie Phoenix Contact, Siemens, ABB, 
+  Schneider Electric und weitere genannte werden ausschließlich zu
   Identifikations- und Kompatibilitätszwecken genannt und sind Marken ihrer
   jeweiligen Eigentümer.
 
