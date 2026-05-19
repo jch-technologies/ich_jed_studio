@@ -4,7 +4,7 @@ title: JCH GOOSE Bridge
 
 # JCH GOOSE Bridge
 
-← [Übersicht / Overview](index.md)
+← [Zurück zur Übersicht](index.md) · [English version](bridge.en.md) · [Support](support.md)
 
 Kostenloses macOS-Helferprogramm, das GOOSE- und Sampled-Values-Frames
 via libpcap mit dem Stationsnetz austauscht. JCH IED Studio (iPad/Mac)
