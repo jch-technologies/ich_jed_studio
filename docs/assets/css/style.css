@@ -1,0 +1,187 @@
+---
+---
+
+// === JCH IED Studio — Theme-Overrides für minima ============================
+// Professionelle Engineering-Optik: gedecktes Marine-Blau auf warmem Off-White,
+// dunkler Header, monospace-Code mit Schiefer-Hintergrund.
+
+// Brand-Farben (vor @import setzen, sonst greifen sie nicht)
+$brand-color:           #1f3a5f;   // Marine
+$brand-color-light:     #4a6a8f;
+$brand-color-dark:      #122a47;
+
+$text-color:            #1a1f2b;
+$background-color:      #f6f4ef;   // warmes Off-White (Papier)
+$grey-color:            #6b7280;
+$grey-color-light:      #d8dde5;
+$grey-color-dark:       #374151;
+
+$table-text-align:      left;
+
+$base-font-family:      -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                        "Helvetica Neue", Arial, sans-serif;
+$code-font-family:      "SF Mono", Menlo, Consolas, monospace;
+
+$content-width:         900px;
+$on-large:              1024px;
+
+@import "minima";
+
+// === eigene Overrides =======================================================
+
+body {
+  font-feature-settings: "ss01", "ss02";
+  letter-spacing: 0.005em;
+}
+
+// Header: dunkler Marine-Balken statt weiß
+.site-header {
+  background: $brand-color-dark;
+  border-top: none;
+  border-bottom: 3px solid $brand-color;
+  min-height: 56px;
+
+  .site-title,
+  .site-title:visited {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .page-link {
+    color: rgba(#fff, 0.85);
+    &:hover { color: #fff; text-decoration: none; }
+  }
+
+  .site-nav .menu-icon > svg { fill: #fff; }
+}
+
+// Footer dezent dunkel
+.site-footer {
+  background: #ececea;
+  border-top: 1px solid $grey-color-light;
+  color: $grey-color-dark;
+  padding: 24px 0;
+}
+
+// Überschriften: Marine + klare Hierarchie
+h1, h2, h3, h4 {
+  color: $brand-color-dark;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.4em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid $brand-color;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 1.55rem;
+  margin-top: 2em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+h3 { font-size: 1.2rem; margin-top: 1.6em; }
+
+// Links: Marine, unterstreichen erst beim Hover
+a {
+  color: $brand-color;
+  text-decoration: none;
+  border-bottom: 1px solid rgba($brand-color, 0.25);
+  transition: color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    color: $brand-color-dark;
+    border-bottom-color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+// Tabellen: zurückhaltend, mit Kopfzeile in Marine
+table {
+  border-collapse: collapse;
+  border: 1px solid $grey-color-light;
+  margin: 1.5em 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+
+  th {
+    background: $brand-color-dark;
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.6em 0.9em;
+    border: none;
+  }
+
+  td {
+    padding: 0.55em 0.9em;
+    border-top: 1px solid $grey-color-light;
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) td {
+    background: #faf8f3;
+  }
+}
+
+// Code: inline und Blöcke
+code {
+  background: #eceae3;
+  color: #2d3748;
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  font-size: 0.92em;
+}
+
+pre {
+  background: #1f2937;
+  color: #e2e8f0;
+  border: none;
+  border-radius: 6px;
+  padding: 1em 1.2em;
+  overflow-x: auto;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+
+  code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    font-size: 0.88em;
+  }
+}
+
+// Blockquotes: Marine-Akzent links
+blockquote {
+  border-left: 4px solid $brand-color;
+  background: #fff;
+  color: $grey-color-dark;
+  padding: 0.6em 1em;
+  margin: 1.2em 0;
+  font-style: normal;
+  letter-spacing: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+
+  > :last-child { margin-bottom: 0; }
+}
+
+// Horizontal Rule
+hr {
+  border: none;
+  border-top: 1px solid $grey-color-light;
+  margin: 2.5em 0;
+}
+
+// Content-Container etwas Luft
+.page-content {
+  padding: 32px 0 64px;
+}
+
+// Listen-Spacing
+li + li { margin-top: 0.2em; }
