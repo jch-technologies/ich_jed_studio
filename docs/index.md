@@ -2,8 +2,6 @@
 title: JCH IED Studio
 ---
 
-# JCH IED Studio
-
 **Engineering- und Test-Werkzeug für IEC 61850.**
 Native macOS- und iPadOS-App. Lädt SCD/ICD/CID-Dateien, verbindet sich mit
 IEDs per MMS, empfängt und sendet GOOSE und Sampled Values über die separate
@@ -41,7 +39,6 @@ IEDs per MMS, empfängt und sendet GOOSE und Sampled Values über die separate
 |---|---|
 | **macOS 13+** | Mac App Store, sandboxed |
 | **iPadOS 13+** | App Store, sandboxed |
-| **iPhone** | App Store (reduzierte 4-Tab-UI ohne Server-Simulator) |
 
 ---
 
