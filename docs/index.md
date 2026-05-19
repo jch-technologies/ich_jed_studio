@@ -2,6 +2,8 @@
 title: JCH IED Studio
 ---
 
+[English version](index.en.md) · [Bridge](bridge.md) · [Support](support.md)
+
 **Engineering- und Test-Werkzeug für IEC 61850.**
 Native macOS- und iPadOS-App. Lädt SCD/ICD/CID-Dateien, verbindet sich mit
 IEDs per MMS, empfängt und sendet GOOSE und Sampled Values über die separate
@@ -24,11 +26,10 @@ IEDs per MMS, empfängt und sendet GOOSE und Sampled Values über die separate
   Subscribe + Publish für GOOSE (EtherType 0x88B8) und SV (0x88BA).
 - **SCL-Editor** — Substations, Voltage Levels, Bays, ConductingEquipment,
   IEDs, LDevices, LNs, DataSets, RCBs, GoCBs, Inputs. Export als
-  SCD/ICD/IID/CID/SED. Drei eingebaute Demo-Projekte.
+  SCD/ICD/IID/CID/SED. Drei eingebaute Demo-Projekte für Schulung +
+  Konformitätstest.
 - **Spec-konformer SCL-Export** — `xsi:schemaLocation`, `RptEnabled`,
   korrektes P-Element-Ordering, transitive DataTypeTemplates-Closure.
-  Kompatibel zu den gängigsten Herstellern. 
-
 ---
 
 ## Plattformen
